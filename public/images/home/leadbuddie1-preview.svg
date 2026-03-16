@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <clipPath id="cardClip">
+      <rect width="800" height="500" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F0F4F8"/>
+
+  <!-- Left sidebar -->
+  <rect x="0" y="0" width="200" height="500" fill="#0F172A"/>
+
+  <!-- Sidebar logo area -->
+  <rect x="16" y="16" width="32" height="32" rx="8" fill="#14B8A6"/>
+  <text x="32" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="white">LB</text>
+  <text x="62" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="white">LeadBuddie</text>
+  <text x="62" y="45" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">WhatsApp CRM</text>
+
+  <!-- Sidebar nav items -->
+  <rect x="8" y="72" width="184" height="36" rx="8" fill="#1E293B"/>
+  <rect x="20" y="84" width="12" height="12" rx="3" fill="#14B8A6"/>
+  <text x="40" y="93" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="white">Pipeline</text>
+
+  <rect x="20" y="120" width="12" height="12" rx="3" fill="#475569"/>
+  <text x="40" y="130" font-family="system-ui, sans-serif" font-size="12" fill="#94A3B8">Conversations</text>
+
+  <rect x="20" y="152" width="12" height="12" rx="3" fill="#475569"/>
+  <text x="40" y="162" font-family="system-ui, sans-serif" font-size="12" fill="#94A3B8">Contacts</text>
+
+  <rect x="20" y="184" width="12" height="12" rx="3" fill="#475569"/>
+  <text x="40" y="194" font-family="system-ui, sans-serif" font-size="12" fill="#94A3B8">Automations</text>
+
+  <rect x="20" y="216" width="12" height="12" rx="3" fill="#475569"/>
+  <text x="40" y="226" font-family="system-ui, sans-serif" font-size="12" fill="#94A3B8">Reports</text>
+
+  <!-- Sidebar stats -->
+  <rect x="8" y="268" width="184" height="80" rx="8" fill="#1E293B"/>
+  <text x="20" y="286" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">TODAY'S LEADS</text>
+  <text x="20" y="306" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="white">24</text>
+  <rect x="20" y="316" width="60" height="4" rx="2" fill="#14B8A6"/>
+  <rect x="20" y="316" width="40" height="4" rx="2" fill="#0D9488"/>
+  <text x="20" y="336" font-family="system-ui, sans-serif" font-size="10" fill="#22D3EE">↑ 12% from yesterday</text>
+
+  <!-- WhatsApp indicator -->
+  <rect x="8" y="364" width="184" height="48" rx="8" fill="#166534" fill-opacity="0.4"/>
+  <circle cx="28" cy="388" r="10" fill="#22C55E"/>
+  <text x="28" y="392" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">W</text>
+  <text x="46" y="384" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#86EFAC">WhatsApp Active</text>
+  <text x="46" y="398" font-family="system-ui, sans-serif" font-size="10" fill="#4ADE80">3 chats open</text>
+
+  <!-- Main content area -->
+  <!-- Header -->
+  <rect x="200" y="0" width="600" height="56" fill="white"/>
+  <rect x="200" y="55" width="600" height="1" fill="#E2E8F0"/>
+  <text x="220" y="32" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#0F172A">Sales Pipeline</text>
+  <text x="220" y="46" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">48 active leads · Last updated 2 min ago</text>
+
+  <!-- Action buttons -->
+  <rect x="556" y="14" width="100" height="28" rx="6" fill="#14B8A6"/>
+  <text x="606" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="white">+ New Lead</text>
+  <rect x="666" y="14" width="72" height="28" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="702" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Filter</text>
+
+  <!-- Kanban columns -->
+  <!-- New column -->
+  <rect x="212" y="72" width="145" height="28" rx="6" fill="#EFF6FF"/>
+  <circle cx="226" cy="86" r="5" fill="#3B82F6"/>
+  <text x="236" y="90" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1D4ED8">New Leads</text>
+  <rect x="340" y="78" width="14" height="16" rx="4" fill="#DBEAFE"/>
+  <text x="347" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#1D4ED8">12</text>
+
+  <!-- Lead card 1 -->
+  <rect x="212" y="108" width="145" height="88" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="228" cy="126" r="10" fill="#DBEAFE"/>
+  <text x="228" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#1D4ED8">SK</text>
+  <text x="244" y="124" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Sarah Kim</text>
+  <text x="244" y="136" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Acme Corp</text>
+  <rect x="220" y="144" width="54" height="16" rx="4" fill="#DCFCE7"/>
+  <text x="247" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#15803D">WhatsApp</text>
+  <text x="220" y="178" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$12,000 · 2h ago</text>
+  <circle cx="342" cy="175" r="6" fill="#22C55E"/>
+  <text x="342" y="179" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="white">W</text>
+
+  <!-- Lead card 2 -->
+  <rect x="212" y="204" width="145" height="88" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="228" cy="222" r="10" fill="#FEF3C7"/>
+  <text x="228" y="226" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#92400E">TM</text>
+  <text x="244" y="220" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Tom Miller</text>
+  <text x="244" y="232" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">TechVentures</text>
+  <rect x="220" y="240" width="42" height="16" rx="4" fill="#F0F9FF"/>
+  <text x="241" y="251" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#0369A1">Email</text>
+  <text x="220" y="274" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$8,500 · 4h ago</text>
+
+  <!-- Lead card 3 -->
+  <rect x="212" y="300" width="145" height="88" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="228" cy="318" r="10" fill="#FCE7F3"/>
+  <text x="228" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#9D174D">AL</text>
+  <text x="244" y="316" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Amy Lee</text>
+  <text x="244" y="328" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Bright Solutions</text>
+  <rect x="220" y="336" width="54" height="16" rx="4" fill="#DCFCE7"/>
+  <text x="247" y="347" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#15803D">WhatsApp</text>
+  <text x="220" y="370" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$22,000 · 1h ago</text>
+  <circle cx="342" cy="367" r="6" fill="#22C55E"/>
+  <text x="342" y="371" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="white">W</text>
+
+  <!-- Contacted column -->
+  <rect x="368" y="72" width="145" height="28" rx="6" fill="#FFF7ED"/>
+  <circle cx="382" cy="86" r="5" fill="#F59E0B"/>
+  <text x="392" y="90" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#92400E">Contacted</text>
+  <rect x="494" y="78" width="14" height="16" rx="4" fill="#FEF3C7"/>
+  <text x="501" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#92400E">9</text>
+
+  <!-- Contacted card 1 - with WhatsApp chat preview -->
+  <rect x="368" y="108" width="145" height="110" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="384" cy="126" r="10" fill="#DCFCE7"/>
+  <text x="384" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#15803D">JR</text>
+  <text x="400" y="124" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">James Rose</text>
+  <text x="400" y="136" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">GlobalTrade Inc</text>
+  <!-- Chat preview bubble -->
+  <rect x="376" y="144" width="130" height="42" rx="6" fill="#F0FDF4"/>
+  <text x="384" y="158" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">Last message · 30m ago</text>
+  <text x="384" y="171" font-family="system-ui, sans-serif" font-size="10" fill="#0F172A">"Interested in demo..."</text>
+  <text x="384" y="182" font-family="system-ui, sans-serif" font-size="9" fill="#22C55E">✓✓ Read</text>
+  <text x="376" y="210" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$34,000 · High priority</text>
+
+  <!-- Contacted card 2 -->
+  <rect x="368" y="228" width="145" height="88" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="384" cy="246" r="10" fill="#EDE9FE"/>
+  <text x="384" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#5B21B6">PR</text>
+  <text x="400" y="244" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Priya Rajan</text>
+  <text x="400" y="256" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">InnovateTech</text>
+  <rect x="376" y="264" width="54" height="16" rx="4" fill="#DCFCE7"/>
+  <text x="403" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#15803D">WhatsApp</text>
+  <text x="376" y="298" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$18,500 · 6h ago</text>
+
+  <!-- Qualified column -->
+  <rect x="524" y="72" width="145" height="28" rx="6" fill="#F0FDF4"/>
+  <circle cx="538" cy="86" r="5" fill="#22C55E"/>
+  <text x="548" y="90" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#15803D">Qualified</text>
+  <rect x="648" y="78" width="14" height="16" rx="4" fill="#DCFCE7"/>
+  <text x="655" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#15803D">7</text>
+
+  <!-- Qualified card 1 -->
+  <rect x="524" y="108" width="145" height="88" rx="8" fill="white" stroke="#14B8A6" stroke-width="1.5"/>
+  <rect x="524" y="108" width="145" height="5" rx="4" fill="#14B8A6"/>
+  <circle cx="540" cy="130" r="10" fill="#CCFBF1"/>
+  <text x="540" y="134" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#0F766E">WC</text>
+  <text x="556" y="128" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Wei Chen</text>
+  <text x="556" y="140" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Pacific Ventures</text>
+  <rect x="532" y="148" width="68" height="16" rx="4" fill="#CCFBF1"/>
+  <text x="566" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#0F766E">Demo Booked</text>
+  <text x="532" y="182" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$48,000 · Hot 🔥</text>
+
+  <!-- Qualified card 2 -->
+  <rect x="524" y="204" width="145" height="88" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="540" cy="222" r="10" fill="#FEF3C7"/>
+  <text x="540" y="226" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#92400E">NB</text>
+  <text x="556" y="220" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Nina Brown</text>
+  <text x="556" y="232" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Nexus Corp</text>
+  <rect x="532" y="240" width="54" height="16" rx="4" fill="#DCFCE7"/>
+  <text x="559" y="251" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#15803D">WhatsApp</text>
+  <text x="532" y="274" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">$29,000 · Yesterday</text>
+
+  <!-- Bottom stats bar -->
+  <rect x="200" y="408" width="600" height="92" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="200" y="408" width="600" height="1" fill="#E2E8F0"/>
+
+  <!-- Stat 1 -->
+  <text x="240" y="436" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">PIPELINE VALUE</text>
+  <text x="240" y="460" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">$342K</text>
+  <text x="240" y="476" font-family="system-ui, sans-serif" font-size="10" fill="#14B8A6">↑ 18% this month</text>
+
+  <rect x="368" y="424" width="1" height="56" fill="#E2E8F0"/>
+
+  <!-- Stat 2 -->
+  <text x="398" y="436" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">RESPONSE RATE</text>
+  <text x="398" y="460" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">87%</text>
+  <text x="398" y="476" font-family="system-ui, sans-serif" font-size="10" fill="#14B8A6">via WhatsApp</text>
+
+  <rect x="524" y="424" width="1" height="56" fill="#E2E8F0"/>
+
+  <!-- Stat 3 -->
+  <text x="554" y="436" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">AVG CLOSE TIME</text>
+  <text x="554" y="460" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">4.2d</text>
+  <text x="554" y="476" font-family="system-ui, sans-serif" font-size="10" fill="#14B8A6">↓ 1.5d faster</text>
+
+  <!-- AI badge -->
+  <rect x="660" y="424" width="118" height="56" rx="8" fill="#0F172A"/>
+  <text x="719" y="444" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#94A3B8">AI SUGGESTION</text>
+  <text x="719" y="460" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="white">Follow up with</text>
+  <text x="719" y="472" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#22D3EE">James Rose</text>
+</svg>
