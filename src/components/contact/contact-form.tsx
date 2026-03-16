@@ -24,6 +24,7 @@ export function ContactForm() {
     const payload = {
       name: String(formData.get("name") ?? ""),
       email: String(formData.get("email") ?? ""),
+      phone: String(formData.get("phone") ?? ""),
       interest: String(formData.get("interest") ?? ""),
       message: String(formData.get("message") ?? ""),
     };
@@ -37,7 +38,8 @@ export function ContactForm() {
         body: JSON.stringify(payload),
       });
 
-      const result = (await response.json()) as { error?: string; success?: boolean };
+      const raw = await response.text();
+      const result = raw ? (JSON.parse(raw) as { error?: string; success?: boolean }) : {};
 
       if (!response.ok) {
         setState({
@@ -81,6 +83,15 @@ export function ContactForm() {
           name="email"
           placeholder="you@company.com"
           required
+          className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-teal-400 focus:bg-white"
+        />
+      </label>
+      <label className="grid gap-2">
+        <span className="text-sm font-medium text-slate-700">Mobile number</span>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+91 90034 44702"
           className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-teal-400 focus:bg-white"
         />
       </label>

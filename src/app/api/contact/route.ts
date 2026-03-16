@@ -11,6 +11,7 @@ const recipients = [
 type ContactPayload = {
   name?: string;
   email?: string;
+  phone?: string;
   interest?: string;
   message?: string;
 };
@@ -29,6 +30,7 @@ export async function POST(request: Request) {
   const body = (await request.json()) as ContactPayload;
   const name = body.name?.trim() ?? "";
   const email = body.email?.trim() ?? "";
+  const phone = body.phone?.trim() ?? "";
   const interest = body.interest?.trim() ?? "General Hutliv overview";
   const message = body.message?.trim() ?? "";
 
@@ -44,6 +46,7 @@ export async function POST(request: Request) {
     "",
     `Name: ${name}`,
     `Email: ${email}`,
+    `Mobile: ${phone || "Not provided"}`,
     `Interest: ${interest}`,
     "",
     "Message:",
@@ -55,6 +58,7 @@ export async function POST(request: Request) {
       <h2 style="margin-bottom: 16px;">New contact form submission from hutliv.com</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Mobile:</strong> ${phone || "Not provided"}</p>
       <p><strong>Interest:</strong> ${interest}</p>
       <p><strong>Message:</strong></p>
       <p>${message.replace(/\n/g, "<br />")}</p>
