@@ -19,8 +19,9 @@ export function ContactForm() {
     event.preventDefault();
     setIsSubmitting(true);
     setState(initialState);
+    const form = event.currentTarget;
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const payload = {
       name: String(formData.get("name") ?? ""),
       email: String(formData.get("email") ?? ""),
@@ -51,9 +52,9 @@ export function ContactForm() {
 
       setState({
         type: "success",
-        message: "Your message has been sent. We’ll get back to you soon.",
+        message: "We’ve received your message and will contact you shortly.",
       });
-      event.currentTarget.reset();
+      form.reset();
     } catch {
       setState({
         type: "error",
