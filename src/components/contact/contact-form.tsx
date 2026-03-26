@@ -28,6 +28,7 @@ export function ContactForm() {
       phone: String(formData.get("phone") ?? ""),
       interest: String(formData.get("interest") ?? ""),
       message: String(formData.get("message") ?? ""),
+      _hp: String(formData.get("_hp") ?? ""),
     };
 
     try {
@@ -67,6 +68,15 @@ export function ContactForm() {
 
   return (
     <form className="mt-6 grid gap-5" onSubmit={handleSubmit}>
+      {/* Honeypot: hidden from real users, bots fill it in */}
+      <input
+        type="text"
+        name="_hp"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+      />
       <label className="grid gap-2">
         <span className="text-sm font-medium text-slate-700">Name</span>
         <input

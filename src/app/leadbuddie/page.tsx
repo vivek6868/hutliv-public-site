@@ -1,4 +1,3 @@
-import { ImagePlaceholder } from "@/components/marketing/image-placeholder";
 import { ShowcaseImage } from "@/components/marketing/showcase-image";
 import { Reveal } from "@/components/motion/reveal";
 import { Badge } from "@/components/ui/badge";
@@ -190,12 +189,11 @@ export default function LeadBuddiePage() {
                   LeadBuddie is a WhatsApp-first CRM designed to capture enquiries automatically, organize conversations into a structured pipeline, and help teams follow up with leads without losing opportunities.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <ButtonLink
-                    href="https://www.leadbuddie.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Start with LeadBuddie
+                  <ButtonLink href="https://app.leadbuddie.com/login">
+                    Get Started Free
+                  </ButtonLink>
+                  <ButtonLink href="https://www.leadbuddie.com" variant="secondary" target="_blank" rel="noreferrer">
+                    Visit Website →
                   </ButtonLink>
                 </div>
               </div>
@@ -310,12 +308,11 @@ export default function LeadBuddiePage() {
                   LeadBuddie helps teams keep conversations organized, follow-up on time, and turn more enquiries into real pipeline momentum.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <ButtonLink
-                    href="https://www.leadbuddie.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Start with LeadBuddie
+                  <ButtonLink href="https://app.leadbuddie.com/login">
+                    Get Started Free
+                  </ButtonLink>
+                  <ButtonLink href="https://www.leadbuddie.com" variant="secondary" target="_blank" rel="noreferrer">
+                    Visit Website →
                   </ButtonLink>
                 </div>
               </div>

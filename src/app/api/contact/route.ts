@@ -8,12 +8,30 @@ const recipients = [
   "anupiyaramakrishnan@gmail.com",
 ];
 
+// Simple in-memory rate limiter: max 3 submissions per IP per 10 minutes
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 3;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) return true;
+  entry.count += 1;
+  return false;
+}
+
 type ContactPayload = {
   name?: string;
   email?: string;
   phone?: string;
   interest?: string;
   message?: string;
+  _hp?: string;
 };
 
 export async function POST(request: Request) {
@@ -28,6 +46,26 @@ export async function POST(request: Request) {
   }
 
   const body = (await request.json()) as ContactPayload;
+
+  // Honeypot check — bots fill this field, real users never see it
+  if (body._hp) {
+    // Return 200 to not tip off bots that they were blocked
+    return NextResponse.json({ success: true });
+  }
+
+  // Rate limiting by IP
+  const ip =
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
+    request.headers.get("x-real-ip") ??
+    "unknown";
+
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many submissions. Please try again later." },
+      { status: 429 },
+    );
+  }
+
   const name = body.name?.trim() ?? "";
   const email = body.email?.trim() ?? "";
   const phone = body.phone?.trim() ?? "";
@@ -39,6 +77,11 @@ export async function POST(request: Request) {
       { error: "Name, email, and message are required." },
       { status: 400 },
     );
+  }
+
+  // Basic email format check
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return NextResponse.json({ error: "Invalid email address." }, { status: 400 });
   }
 
   const text = [

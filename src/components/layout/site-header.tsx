@@ -97,10 +97,13 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <ButtonLink href="/products">Explore Products</ButtonLink>
-          <ButtonLink href="/contact" variant="secondary">
-            Book Demo
-          </ButtonLink>
+          <a
+            href="https://app.hutliv.com/login"
+            className="rounded-full px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
+          >
+            Sign In
+          </a>
+          <ButtonLink href="https://app.hutliv.com/register">Get Started Free</ButtonLink>
         </div>
 
         <button
@@ -152,12 +155,20 @@ export function SiteHeader() {
               ))}
             </div>
             <div className="mt-5 flex gap-3">
-              <ButtonLink className="flex-1" href="/products">
-                Explore Products
-              </ButtonLink>
-              <ButtonLink className="flex-1" href="/contact" variant="secondary">
-                Book Demo
-              </ButtonLink>
+              <a
+                href="https://app.hutliv.com/login"
+                className="flex-1 rounded-full border border-slate-200 px-4 py-3 text-center text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+                onClick={() => setMobileOpen(false)}
+              >
+                Sign In
+              </a>
+              <a
+                href="https://app.hutliv.com/register"
+                className="flex-1 rounded-full bg-[linear-gradient(135deg,#12B8A5,#22D3EE)] px-4 py-3 text-center text-sm font-semibold text-slate-950 shadow-[0_18px_40px_-18px_rgba(18,184,165,0.65)] transition hover:-translate-y-0.5"
+                onClick={() => setMobileOpen(false)}
+              >
+                Get Started Free
+              </a>
             </div>
           </Container>
         </div>

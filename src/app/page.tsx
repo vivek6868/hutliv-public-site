@@ -16,45 +16,7 @@ export const metadata = createMetadata({
   path: "/",
 });
 
-const products = [
-  {
-    name: "LeadBuddie",
-    eyebrow: "WhatsApp-first CRM",
-    description:
-      "WhatsApp-first CRM designed to capture leads, manage follow-ups, and give teams visibility over their pipeline.",
-    bullets: [
-      "WhatsApp lead capture",
-      "CRM pipeline management",
-      "AI assisted responses",
-      "Follow-up automation",
-    ],
-    imageSrc: "/images/home/leadbuddie1-preview.svg",
-    imageAlt: "LeadBuddie CRM dashboard preview",
-    imageClassName: "object-cover object-center",
-    aspectClassName: "aspect-[16/10]",
-    primaryCta: { label: "Learn More", href: "/leadbuddie" },
-    secondaryCta: { label: "Visit LeadBuddie Website", href: "https://www.leadbuddie.com" },
-    dark: false,
-  },
-  {
-    name: "Hutliv Realty",
-    eyebrow: "Real estate operations platform",
-    description:
-      "A modern operations platform for real estate agencies to manage listings, enquiries, and their digital presence.",
-    bullets: [
-      "Property listing management",
-      "Enquiry tracking",
-      "Agent workflows",
-      "Website builder for real estate agencies",
-    ],
-    imageSrc: "/images/home/realty1-preview.svg",
-    imageAlt: "Hutliv Realty property management dashboard",
-    imageClassName: "object-cover object-center",
-    aspectClassName: "aspect-[16/10]",
-    primaryCta: { label: "Explore Hutliv Realty", href: "/realty" },
-    dark: true,
-  },
-];
+// products array removed — cards rendered inline below for bespoke designs
 
 const valueBlocks = [
   {
@@ -134,7 +96,7 @@ export default function HomePage() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   <ButtonLink href="/products">Explore Products</ButtonLink>
                   <ButtonLink href="/contact" variant="secondary">
-                    Book Demo
+                    Contact Us
                   </ButtonLink>
                 </div>
               </div>
@@ -158,73 +120,133 @@ export default function HomePage() {
           <SectionHeading
             badge="Products"
             title="Products built for real business workflows"
-            description="Hutliv introduces the brand first, then shows the products that carry that vision into day-to-day execution."
+            description="Hutliv builds connected software that turns conversations, leads, and operations into clear, manageable workflows."
           />
 
           <div className="mt-10 grid gap-6">
-            {products.map((product, index) => (
-              <Reveal key={product.name} delay={index * 0.08}>
-                <article
-                  className={`grid gap-8 rounded-[34px] border p-6 shadow-[0_28px_80px_-52px_rgba(11,31,51,0.45)] lg:grid-cols-[0.95fr_1.05fr] lg:p-8 ${
-                    product.dark
-                      ? "border-slate-800 bg-slate-950 text-white"
-                      : "border-slate-200 bg-white"
-                  }`}
-                >
-                  <div>
-                    <p
-                      className={`text-xs font-semibold uppercase tracking-[0.22em] ${
-                        product.dark ? "text-teal-300" : "text-teal-700"
-                      }`}
-                    >
-                      {product.eyebrow}
+
+            {/* ── LeadBuddie card ────────────────────────────────────────── */}
+            <Reveal>
+              <article className="grid gap-8 rounded-[34px] border border-slate-200 bg-white p-6 shadow-[0_28px_80px_-52px_rgba(11,31,51,0.45)] lg:grid-cols-[0.95fr_1.05fr] lg:p-8">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-700">
+                    WhatsApp-first CRM
+                  </p>
+                  <h2 className="font-heading mt-5 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
+                    LeadBuddie
+                  </h2>
+                  <p className="mt-4 text-base leading-8 text-slate-600">
+                    WhatsApp-first CRM designed to capture leads, manage follow-ups, and give teams
+                    full visibility over their pipeline — without switching between five different apps.
+                  </p>
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                    {["WhatsApp lead capture", "CRM pipeline management", "AI assisted responses", "Follow-up automation"].map((b) => (
+                      <div key={b} className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700">
+                        {b}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    <ButtonLink href="https://app.leadbuddie.com/login">Get Started</ButtonLink>
+                    <ButtonLink href="/leadbuddie" variant="secondary">Learn More</ButtonLink>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <ShowcaseImage
+                    src="/images/home/leadbuddie1-preview.svg"
+                    alt="LeadBuddie CRM dashboard preview"
+                    className="w-full max-w-[560px]"
+                    imageClassName="object-cover object-center"
+                    aspectClassName="aspect-[16/10]"
+                  />
+                </div>
+              </article>
+            </Reveal>
+
+            {/* ── Hutliv Realty premium card ─────────────────────────────── */}
+            <Reveal delay={0.08}>
+              <article className="relative overflow-hidden rounded-[34px] border border-slate-800 bg-slate-950 p-6 shadow-[0_28px_80px_-52px_rgba(11,31,51,0.7)] text-white lg:p-0">
+                {/* Background glow */}
+                <div className="pointer-events-none absolute inset-0 -z-0">
+                  <div className="absolute -top-24 left-1/3 h-72 w-72 rounded-full bg-teal-400/10 blur-3xl" />
+                  <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-cyan-400/8 blur-3xl" />
+                </div>
+
+                <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1fr_1fr] lg:gap-0">
+                  {/* Left — content */}
+                  <div className="lg:py-10 lg:pl-10">
+                    <div className="flex items-center gap-3">
+                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-300">
+                        Hutliv Realty
+                      </p>
+                      <span className="rounded-full border border-teal-400/20 bg-teal-400/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-teal-300">
+                        Real Estate Platform
+                      </span>
+                    </div>
+
+                    {/* Quote */}
+                    <blockquote className="mt-6">
+                      <span className="font-serif text-5xl leading-none text-teal-400/40 select-none">"</span>
+                      <h2 className="font-heading -mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.6rem] lg:leading-[1.18]">
+                        Your listings deserve a website, not just a WhatsApp catalogue.
+                      </h2>
+                    </blockquote>
+
+                    <p className="mt-5 text-base leading-8 text-slate-300">
+                      Get your own branded property website live in under 10 minutes — with AI-powered
+                      descriptions, lead capture, and WhatsApp follow-up built in.
                     </p>
-                    <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
-                      {product.name}
-                    </h2>
-                    <p
-                      className={`mt-4 text-base leading-8 ${
-                        product.dark ? "text-slate-300" : "text-slate-600"
-                      }`}
-                    >
-                      {product.description}
-                    </p>
-                    <div className="mt-6 grid gap-3">
-                      {product.bullets.map((bullet) => (
-                        <div
-                          key={bullet}
-                          className={`rounded-2xl border px-4 py-3 text-sm ${
-                            product.dark
-                              ? "border-white/10 bg-white/5 text-slate-200"
-                              : "border-slate-200 bg-slate-50 text-slate-700"
-                          }`}
+
+                    {/* Feature pills */}
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {[
+                        "Own property website",
+                        "AI descriptions",
+                        "Lead inbox",
+                        "WhatsApp CRM",
+                        "Bulk upload",
+                        "Free to start",
+                      ].map((f) => (
+                        <span
+                          key={f}
+                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200"
                         >
-                          {bullet}
-                        </div>
+                          {f}
+                        </span>
                       ))}
                     </div>
+
+                    {/* CTAs */}
                     <div className="mt-8 flex flex-wrap gap-3">
-                      <ButtonLink href={product.primaryCta.href}>{product.primaryCta.label}</ButtonLink>
-                      {product.secondaryCta ? (
-                        <ButtonLink href={product.secondaryCta.href} variant="secondary">
-                          {product.secondaryCta.label}
-                        </ButtonLink>
-                      ) : null}
+                      <a
+                        href="https://app.hutliv.com/register"
+                        className="inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#12B8A5,#22D3EE)] px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_18px_40px_-18px_rgba(18,184,165,0.55)] transition hover:-translate-y-0.5"
+                      >
+                        Get Started Free
+                      </a>
+                      <ButtonLink href="/realty" variant="ghost">
+                        Explore Realty →
+                      </ButtonLink>
                     </div>
+                    <p className="mt-3 text-xs text-slate-500">
+                      No credit card. No developer. Live in 10 minutes.
+                    </p>
                   </div>
 
-                  <div className="flex items-center justify-center">
+                  {/* Right — product image */}
+                  <div className="lg:py-6 lg:pr-6">
                     <ShowcaseImage
-                      src={product.imageSrc}
-                      alt={product.imageAlt}
-                      className={`w-full max-w-[560px] ${product.dark ? "border-white/10 bg-white/5 shadow-none" : ""}`}
-                      imageClassName={product.imageClassName}
+                      src="/images/home/realty1-preview.svg"
+                      alt="Hutliv Realty property management dashboard"
+                      className="border-white/10 bg-white/5 shadow-none"
+                      imageClassName="object-cover object-center"
                       aspectClassName="aspect-[16/10]"
                     />
                   </div>
-                </article>
-              </Reveal>
-            ))}
+                </div>
+              </article>
+            </Reveal>
+
           </div>
         </Container>
       </section>
@@ -341,7 +363,7 @@ export default function HomePage() {
         description="Explore products designed to bring clarity and control to modern business workflows."
         primaryLabel="Explore Products"
         primaryHref="/products"
-        secondaryLabel="Book Demo"
+        secondaryLabel="Contact Us"
         secondaryHref="/contact"
       />
     </>
