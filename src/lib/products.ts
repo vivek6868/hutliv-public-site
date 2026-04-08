@@ -21,14 +21,14 @@ export const products: Product[] = [
     slug: "leadbuddie",
     name: "LeadBuddie by Hutliv",
     shortName: "LeadBuddie",
-    eyebrow: "WhatsApp-first CRM",
-    tagline: "Capture, qualify, and follow up on leads without leaving the conversations that drive revenue.",
+    eyebrow: "WhatsApp + Instagram integration CRM",
+    tagline: "Capture, qualify, and convert leads from WhatsApp and Instagram in one disciplined pipeline.",
     summary:
-      "LeadBuddie gives sales and service teams a structured, mobile-ready pipeline built around WhatsApp, reminders, AI prompts, and fast handoffs.",
+      "LeadBuddie gives sales and service teams a structured, mobile-ready pipeline that unifies WhatsApp and Instagram enquiries with AI prompts, reminders, and fast handoffs.",
     audience: "Sales teams, service businesses, and growing SMBs",
     accent: "from-teal-400/30 via-cyan-400/20 to-sky-500/10",
     features: [
-      "WhatsApp lead capture and routing",
+      "WhatsApp and Instagram lead capture",
       "Pipeline visibility and follow-up discipline",
       "AI-assisted replies and task suggestions",
       "Google Sheets sync and lightweight integrations",

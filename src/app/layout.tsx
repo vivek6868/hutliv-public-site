@@ -39,6 +39,8 @@ export const metadata: Metadata = {
     "Hutliv",
     "LeadBuddie",
     "WhatsApp CRM",
+    "Instagram CRM",
+    "WhatsApp Instagram integration",
     "real estate software",
     "lead management",
     "property management platform",

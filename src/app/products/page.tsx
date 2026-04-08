@@ -17,11 +17,11 @@ export const metadata = createMetadata({
 const productCards = [
   {
     name: "LeadBuddie",
-    eyebrow: "WhatsApp-first CRM for capturing and managing leads",
+    eyebrow: "WhatsApp + Instagram integration CRM for modern lead teams",
     description:
-      "LeadBuddie helps businesses capture enquiries from WhatsApp and other channels, organize conversations into a clear pipeline, and follow up with leads faster.",
+      "LeadBuddie helps businesses capture enquiries from WhatsApp, Instagram, and other channels, organize every conversation in one clear pipeline, and follow up faster with better context.",
     features: [
-      "WhatsApp lead capture",
+      "WhatsApp + Instagram lead capture",
       "CRM pipeline management",
       "AI-assisted responses",
       "Follow-up reminders and automation",

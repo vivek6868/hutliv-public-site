@@ -9,19 +9,19 @@ import { createMetadata } from "@/lib/site";
 export const metadata = createMetadata({
   title: "LeadBuddie by Hutliv",
   description:
-    "LeadBuddie is a WhatsApp-first CRM designed to capture enquiries automatically, organize conversations into a structured pipeline, and help teams follow up faster.",
+    "LeadBuddie is a multi-channel lead integration CRM that brings WhatsApp and Instagram enquiries into one powerful pipeline so teams can reply faster and convert more leads.",
   path: "/leadbuddie",
 });
 
 const featureSections = [
   {
     eyebrow: "Lead capture",
-    title: "Capture leads automatically",
+    title: "Bring WhatsApp and Instagram leads into one flow",
     description:
-      "LeadBuddie captures enquiries from messaging channels and organizes them into a structured CRM so businesses never lose potential customers.",
+      "LeadBuddie pulls enquiries from WhatsApp, Instagram, and your website into one structured CRM so every conversation starts in the right place and no lead gets lost in the noise.",
     bullets: [
-      "WhatsApp lead capture",
-      "Instagram enquiries",
+      "WhatsApp enquiry capture",
+      "Instagram DM and lead capture",
       "Website form leads",
       "Google Sheets sync",
     ],
@@ -31,9 +31,9 @@ const featureSections = [
   },
   {
     eyebrow: "CRM pipeline",
-    title: "See every lead in your pipeline",
+    title: "Turn scattered chats into a clean sales pipeline",
     description:
-      "Track leads across different stages and know exactly where every conversation stands.",
+      "From first message to closed deal, LeadBuddie gives your team one shared view of every lead, every stage, and every next action.",
     bullets: ["New leads", "Contacted", "Qualified", "Closed deals"],
     imageLabel: "LeadBuddie CRM pipeline dashboard",
     imageSrc: "/products/leadbuddie/pipeline.png",
@@ -41,9 +41,9 @@ const featureSections = [
   },
   {
     eyebrow: "AI assistance",
-    title: "Reply faster with AI assistance",
+    title: "Reply with speed, clarity, and confidence",
     description:
-      "LeadBuddie helps teams respond to leads quickly with AI assisted suggestions and conversation summaries.",
+      "LeadBuddie helps your team move faster with AI-assisted replies, conversation summaries, and context that keeps every response sharp and relevant.",
     bullets: [
       "AI reply suggestions",
       "Conversation summaries",
@@ -56,9 +56,9 @@ const featureSections = [
   },
   {
     eyebrow: "Follow-up automation",
-    title: "Never miss a follow-up",
+    title: "Follow up like your best salesperson, every time",
     description:
-      "LeadBuddie automatically reminds teams when leads need attention so opportunities never slip through the cracks.",
+      "Automated reminders and team alerts make sure promising leads never go cold, even when your inbox is moving fast.",
     bullets: [
       "Follow-up reminders",
       "Scheduled responses",
@@ -71,7 +71,7 @@ const featureSections = [
   },
 ];
 
-const integrations = ["WhatsApp", "Instagram", "Google Sheets", "Email"];
+const integrations = ["WhatsApp", "Instagram", "Website Forms", "Google Sheets"];
 
 const screenshotCards = [
   {
@@ -183,10 +183,10 @@ export default function LeadBuddiePage() {
                   LeadBuddie
                 </p>
                 <h1 className="font-heading mt-4 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
-                  Capture leads, manage conversations, and close deals faster.
+                  One powerful inbox for WhatsApp and Instagram leads.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-slate-600 sm:text-xl">
-                  LeadBuddie is a WhatsApp-first CRM designed to capture enquiries automatically, organize conversations into a structured pipeline, and help teams follow up with leads without losing opportunities.
+                  LeadBuddie brings WhatsApp and Instagram enquiries into one high-conversion CRM so your team can capture faster, respond smarter, and close more business without juggling disconnected apps.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <ButtonLink href="https://app.leadbuddie.com/login">
@@ -221,8 +221,8 @@ export default function LeadBuddiePage() {
         <Container>
           <SectionHeading
             badge="Integrations"
-            title="Works with the tools you already use"
-            description="LeadBuddie connects with the channels where your leads already come from."
+            title="Built for the channels where customers already reach you"
+            description="From WhatsApp to Instagram and beyond, LeadBuddie turns incoming interest into an organized, actionable pipeline."
             align="center"
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -273,7 +273,7 @@ export default function LeadBuddiePage() {
           <SectionHeading
             badge="Use cases"
             title="Built for teams that depend on fast, disciplined follow-through"
-            description="LeadBuddie fits businesses where lead response quality, pipeline visibility, and conversation management directly impact revenue."
+            description="LeadBuddie fits businesses where response speed, conversation quality, and multi-channel lead management directly impact revenue."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {useCases.map((item, index) => (
@@ -299,13 +299,13 @@ export default function LeadBuddiePage() {
               <div className="absolute inset-y-0 right-0 hidden w-80 rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.22),transparent_62%)] blur-2xl lg:block" />
               <div className="relative max-w-3xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-teal-300">
-                  Ready to move faster?
+                  Ready to unify your lead flow?
                 </p>
                 <h2 className="font-heading mt-4 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-                  Start capturing and managing leads the smarter way.
+                  Stop switching tabs. Start converting conversations.
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-                  LeadBuddie helps teams keep conversations organized, follow-up on time, and turn more enquiries into real pipeline momentum.
+                  LeadBuddie helps teams organize WhatsApp and Instagram leads, follow up on time, and turn more conversations into real pipeline momentum.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <ButtonLink href="https://app.leadbuddie.com/login">

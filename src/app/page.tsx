@@ -40,7 +40,7 @@ const valueBlocks = [
 const testimonials = [
   {
     quote:
-      "LeadBuddie brought discipline to our follow-up process within days. Our team stopped losing conversations across WhatsApp and started working from one clear pipeline.",
+      "LeadBuddie brought discipline to our follow-up process within days. Our team stopped losing conversations across WhatsApp and Instagram and started working from one clear pipeline.",
     name: "Arjun Mehta",
     role: "Founder, UrbanNest Realty",
   },
@@ -130,17 +130,17 @@ export default function HomePage() {
               <article className="grid gap-8 rounded-[34px] border border-slate-200 bg-white p-6 shadow-[0_28px_80px_-52px_rgba(11,31,51,0.45)] lg:grid-cols-[0.95fr_1.05fr] lg:p-8">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-700">
-                    WhatsApp-first CRM
+                    WhatsApp + Instagram integration CRM
                   </p>
                   <h2 className="font-heading mt-5 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
                     LeadBuddie
                   </h2>
                   <p className="mt-4 text-base leading-8 text-slate-600">
-                    WhatsApp-first CRM designed to capture leads, manage follow-ups, and give teams
-                    full visibility over their pipeline — without switching between five different apps.
+                    One smart lead engine for WhatsApp and Instagram that captures enquiries,
+                    organizes follow-ups, and gives teams full pipeline visibility without switching between disconnected apps.
                   </p>
                   <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                    {["WhatsApp lead capture", "CRM pipeline management", "AI assisted responses", "Follow-up automation"].map((b) => (
+                    {["WhatsApp + Instagram capture", "CRM pipeline management", "AI assisted responses", "Follow-up automation"].map((b) => (
                       <div key={b} className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700">
                         {b}
                       </div>
@@ -186,7 +186,7 @@ export default function HomePage() {
 
                     {/* Quote */}
                     <blockquote className="mt-6">
-                      <span className="font-serif text-5xl leading-none text-teal-400/40 select-none">"</span>
+                      <span className="font-serif text-5xl leading-none text-teal-400/40 select-none">&quot;</span>
                       <h2 className="font-heading -mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.6rem] lg:leading-[1.18]">
                         Your listings deserve a website, not just a WhatsApp catalogue.
                       </h2>
@@ -369,3 +369,4 @@ export default function HomePage() {
     </>
   );
 }
+
